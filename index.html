@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <section class="game-container">
+      <section class="game">
+        <section class="game__score">
+            <div class="game__round"></div> <!--dynamic generation of round-->
+            <div class="game__total"></div> <!--dynamic generation of total-->
+            <div class="game__btn">
+                <button aria-label="Restart Game">
+                    Restart Game
+                </button>
+            </div>
+        </section>
+        <section class="computer-choice"></section>
+        <section class="game__dialogue"></section>
+        <section class="rock"></section>
+        <section class="paper"></section>
+        <section class="scissors"></section>
+      </section>
+      <p class="game__message"></p>
+    </section>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
