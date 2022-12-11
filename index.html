@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="dist/css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section class="game-container">
+    <section class="wrapper">
       <section class="game">
-        <section class="game__score">
-            <div class="game__round"></div> <!--dynamic generation of round-->
-            <div class="game__total"></div> <!--dynamic generation of total-->
-            <div class="game__btn">
-                <button aria-label="Restart Game">
-                    Restart Game
-                </button>
-            </div>
+        <h1 class="game__begin">Begin.</h1>
+        <section class="game__score flow">
+          <div class="game__round">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore minima totam magni perspiciatis quod voluptas nihil! Incidunt placeat accusamus aperiam nam ea neque nostrum magnam consequuntur distinctio dolore? Quos.</div> <!--filler-->
+          <!--dynamic generation of round-->
+          <div class="game__total">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam veniam hic magni iste doloribus recusandae consectetur quaerat suscipit porro consequatur nesciunt autem laudantium dolorem laborum dicta tenetur, aliquam provident harum.
+          </div>
+          <!--dynamic generation of total-->
+          <div class="game__btn">
+            <button aria-label="Restart Game">Restart Game</button>
+          </div>
         </section>
-        <section class="computer-choice"></section>
-        <section class="game__dialogue"></section>
-        <section class="rock"></section>
-        <section class="paper"></section>
-        <section class="scissors"></section>
+        <section class="computer__choice flow">
+          <p>You're fit to know the proper meaning of a beat down.</p>
+        </section>
+        <section class="game__dialogue flow">
+          <div class="output">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit quidem ipsam. Voluptate aspernatur eos enim ipsum illum temporibus nisi ut ullam, distinctio architecto, dignissimos non quidem asperiores provident quas.</div>
+          <input type="text" />
+        </section>
+        <section class="rock flow">
+          <div>
+            <img src="assets/images/rock.png" alt="" />
+          </div>
+        </section>
+        <section class="paper flow">
+          <div>
+            <img src="assets/images/papers.png" alt="" />
+          </div>
+        </section>
+        <section class="scissors flow">
+          <div>
+            <img src="assets/images/scissors.png" alt="" />
+          </div>
+        </section>
       </section>
       <p class="game__message"></p>
     </section>
