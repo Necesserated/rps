@@ -1,0 +1,6 @@
+@use '../utilities/colors' as c;
+
+@mixin game__border {
+  background: c.$bg-color;
+  border: 0.5rem solid c.set-text-color(c.$bg-color);
+}

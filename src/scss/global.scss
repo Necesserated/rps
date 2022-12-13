@@ -1,10 +1,20 @@
-@use 'utilities/wrapper';
 @use 'reset';
-@use 'utilities/flow';
+@use 'composition/game-layout';
+@use "blocks/images";
+@use "blocks/button";
+@use "blocks/game__cards";
+@use "blocks/input";
+@use "utilities/typewriter";
 
 body {
-  font-family: "Rubik 80s Fade", cursive;
+  font-family: "Chivo Mono", monospace;
   font-size: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
 }
 
 

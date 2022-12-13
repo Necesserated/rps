@@ -1,0 +1,53 @@
+@use "../utilities/flex" as f;
+@use "../utilities/game__border" as g;
+
+.game {
+  min-height: 100vh;
+  margin-inline: auto;
+  width: 75%;
+  display: grid;
+  grid-template-areas:
+    ".... begin ...."
+    "left middle right"
+    "rock paper scissors";
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 2rem 5rem 2rem 5rem;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2rem;
+
+  &__begin {
+    grid-area: begin;
+    text-align: center;
+  }
+
+  &__score {
+    grid-area: left;
+    @include g.game__border;
+  }
+
+  &__computer-choice {
+    grid-area: middle;
+    @include g.game__border;
+  }
+
+  &__dialogue {
+    grid-area: right;
+    @include g.game__border;
+  }
+
+  &__rock {
+    grid-area: rock;
+    @include f.flex;
+  }
+
+  &__paper {
+    grid-area: paper;
+    @include f.flex;
+  }
+
+  &__scissors {
+    grid-area: scissors;
+    @include f.flex;
+  }
+}

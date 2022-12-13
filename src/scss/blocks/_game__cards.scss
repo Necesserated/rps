@@ -1,0 +1,9 @@
+.card {
+    display: flex;
+    height: 50rem;
+    justify-content: center;
+}
+
+.card:nth-of-type(odd) {
+    align-items: flex-end;
+}

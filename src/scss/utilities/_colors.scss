@@ -1,2 +1,16 @@
-$game-color: hsl(0, 0%, 20%);
-$wrapper-color: hsl(0, 0%, 10%);
+$bg-color: hsl(0, 0%, 15%);
+$white: #fff;
+$black: #000;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $black; // Lighter color, return black
+  } @else {
+    @return $white; // Darker color, return white
+  }
+}
+
+.bg-primary {
+  background: $bg-color;
+  color: set-text-color($bg-color);
+}
